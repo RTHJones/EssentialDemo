@@ -16,17 +16,22 @@ class Home extends Component {
         favActivity : 'Coding'
     }
     render() {
+        // The Header Component, two buttons, and the Profile and Fields components are rendered directly on a single page with no routing.
         const {loginHistory, favColor, first, last, dob, favActivity} = this.state;
         return (
             <div>
                 {/* The style tag here sets the background color to whatever colour has been chosen as favourite */}
                 <style>{`body { background-color: ${favColor}; }`}</style>
                 <Header/>
+
                 {/* This button calls the changeColor function and hence sets both the profile favourite colour and the background colour */}
                 <button className='taskButton' onClick={this.changeColor}>Change Colour!</button>
+
                 {/* This button logs the loginHistory array to the console for viewing */}
                 <button className='taskButton' onClick={this.logHistory}>Log history to console</button>
-                {/* The last login date is sent via props as a new date on the first instance, to prevent an undefined or null value being sent and showing an empty field in the profile */}
+
+                {/* The last login date is sent via props as a new date on the first instance, 
+                this prevents an undefined or null value being sent and showing an empty field in the profile */}
                 <Profile first={first} last={last} dob={dob} activity={favActivity} color={favColor} lastLogin={loginHistory[loginHistory.length] || new Date().toUTCString()}/>
                 <Fields updateDetails={this.updateDetails}/>
             </div>
