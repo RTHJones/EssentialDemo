@@ -1,13 +1,105 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.taskButton {
+  background-color: grey;
+  border: solid 3px white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 3px 3px;
+}
+.taskButton:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+.detailsForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 2% 20%;
+    max-width: 60%;
+    background-color: grey;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.fieldLabel {
+  width: 80%;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+.fieldInput {
+  width: 100%;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+h1{
+  font-size: 70px;
+  font-family: Lobster;
+  border: 3px solid white;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 2% 20%;
+  background-color: gray;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 30px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.profileCard{
+  display: flex;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 2% 20%;
+  background-color: gray;
+  max-width: 60%;
+}
+.profileData{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+.profilePic {
+  border: solid 3px white;
+  border-radius: 50%;
+  max-height: 300px;
+  margin: 35px;
+  margin-right: 0px;
+}
+.submitButton {
+  max-width: 60%;
+  align-self: center;
+  margin: 10px;
 }
