@@ -11,7 +11,7 @@
     "react-fieldset": "^3.1.6",
     "react-flex": "^2.2.8",
     "react-moment": "^0.9.6",
-    "react-scripts": "3.2.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
